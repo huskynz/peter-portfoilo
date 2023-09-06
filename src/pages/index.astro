@@ -44,7 +44,7 @@ const projects = (await getCollection('work'))
 					alt="New Img Comeing Soon"
 					width="480"
 					height="620"
-					src="#"
+					src="https://serv.husky.nz/rollestoncollege/main.png"
 				/>
 			</header>
 
@@ -54,25 +54,12 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			 <section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Have a look</p>
+					<h3>Where you can find me</h3>
+					<!--<p>Have a look</p>-->
 				</header>
-
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-
 				<div class="cta">
-					<CallToAction href="/work/">
-						View All
+					<CallToAction href="https://landing.husky.nz">
+						Have a look
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -88,8 +75,8 @@ const projects = (await getCollection('work'))
 
 				<div class="gallery">
 					<Grid variant="small">
-						<a href=""><img alt="Creepy Peter Looking at the camra" width="300" height="200" src="/assets/microsoft-certified-azure-fundamentals.png"/></a>
-						<a href=""><img alt="Creepy Peter Looking at the camra" width="300" height="200" src="/assets/microsoft-365-certified-fundamentals.png"/></a>
+						<a href="https://learn.microsoft.com/api/credentials/share/en-us/peter-gallwas/868D21A0115A6F3B?sharingId=ABDCE9AB036FFAC5"><img alt="Creepy Peter Looking at the camra" width="300" height="200" src="/assets/microsoft-certified-azure-fundamentals.png"/></a>
+						<a href="https://learn.microsoft.com/api/credentials/share/en-us/peter-gallwas/EF14C73EB99F9662?sharingId=ABDCE9AB036FFAC5"><img alt="Creepy Peter Looking at the camra" width="300" height="200" src="/assets/microsoft-365-certified-fundamentals.png"/></a>
 					</Grid>
 				</div>
 			</section>
