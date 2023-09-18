@@ -6,11 +6,25 @@
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import mixpanel from 'mixpanel-browser';
 
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
 }
+
+// Uncomment if you used npm or yarn in Step 1
+//import mixpanel from 'mixpanel-browser';
+ 
+mixpanel.init(<YOUR_TOKEN>, { debug: true, track_pageview: true, persistence: 'localStorage' });
+ 
+// Set this to a unique identifier for the user performing the event.
+mixpanel.identify(/* \"<USER_ID\"> */)
+ 
+// Track an event. It can be anything, but in this example, we're tracking a Sign Up event.
+mixpanel.track('Sign Up', {
+  'Signup Type': 'Referral'
+})
 
 const { title, description } = Astro.props;
 ---
