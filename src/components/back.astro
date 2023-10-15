@@ -1,0 +1,31 @@
+---
+import Icon from './Icon.astro';
+---
+<style>
+	body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://unsplash.it/1920/1080);
+  background-position: center center;
+  background-size: cover;
+}
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0,0%,0%, 0.9);
+}
+.mask {
+  mask: radial-gradient(
+    circle at 50% 50%,
+    transparent 40px,
+    black 150px
+  );
+}
+:root {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+</style>
+
+<div class="mask"></div>
