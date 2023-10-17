@@ -11,6 +11,7 @@ import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Mproject from '../components/projects.astro';
 
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
@@ -31,12 +32,13 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Hello, im Peter"
-					tagline="Welcome! I'm delighted to have this opportunity to share my passion for cloud engineering, filmmaking, and programming with you. Over the past three years, I have immersed myself in these fascinating fields, constantly learning and growing along the way. From designing robust cloud solutions to capturing captivating visuals through film, and crafting elegant code, I have found endless joy in combining my technical expertise with my creative flair. Join me as I delve into the convergence of technology and art, where the possibilities are boundless."
+					tagline="Im 16 and big into cloud I have my AZ-900 and my MS-900  certs im also instred in web develoment and Film. I have a few projects that I have made and am still working on."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer (Some Times)</Pill>
-						<Pill><i class="fa-brands fa-aws"></i> Jr. Cloud engineer (AWS And Azure)</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
+						<Pill><i class="fa-brands fa-aws"></i> Jr. Cloud engineer</Pill>
+						<Pill><Icon icon="microphone-stage"></Icon> Film and production</Pill>
 					</div>
 				</Hero>
 
@@ -44,14 +46,14 @@ const projects = (await getCollection('work'))
 					alt="New Img Comeing Soon"
 					width="480"
 					height="620"
-					src="https://serv.hnz.li/rollestoncollege/main.png"
+					src="https://serv.husky.nz/rollestoncollege/DSC_0321.JPG"
 				/>
 			</header>
 
 			<Skills />
 		</div>
 
-		<main class="wrapper stack gap-20 lg:gap-48">
+		<Mproject class="wrapper stack gap-20 lg:gap-48">
 			 <section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Where you can find me?</h3>
@@ -77,12 +79,16 @@ const projects = (await getCollection('work'))
 					<Grid variant="small">
 						<a href="https://learn.microsoft.com/api/credentials/share/en-us/peter-gallwas/868D21A0115A6F3B?sharingId=ABDCE9AB036FFAC5"><img alt="Microsoft Azure Fundundamentles cert" width="300" height="200" src="/assets/microsoft-certified-azure-fundamentals.png"/></a>
 						<a href="https://learn.microsoft.com/api/credentials/share/en-us/peter-gallwas/EF14C73EB99F9662?sharingId=ABDCE9AB036FFAC5"><img alt="Microsoft 365 Fundamentels cert" width="300" height="200" src="/assets/microsoft-365-certified-fundamentals.png"/></a>
+
 					</Grid>
+
 				</div>
+
 			</section>
+		</Mproject>
 		</main>
 
-		<ContactCTA />
+
 	</div>
 </BaseLayout>
 
